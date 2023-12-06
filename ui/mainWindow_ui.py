@@ -21,7 +21,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QHeaderView,
     QMenuBar, QPushButton, QSizePolicy, QSpacerItem,
     QStackedWidget, QStatusBar, QTableWidget, QTableWidgetItem,
     QTreeWidget, QTreeWidgetItem, QVBoxLayout, QWidget)
-import image_rc
+import end.ui.image_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -270,7 +270,7 @@ class Ui_MainWindow(object):
 "}")
         self.horizontalLayout_4 = QHBoxLayout(self.content_main)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.content_left = QWidget(self.content_main)
+        self.content_left = QFrame(self.content_main)
         self.content_left.setObjectName(u"content_left")
         sizePolicy7 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
         sizePolicy7.setHorizontalStretch(3)
@@ -281,6 +281,7 @@ class Ui_MainWindow(object):
         self.content_left.setStyleSheet(u"#content_left\n"
 "{\n"
 "	border: 1px solid rgb(0, 0, 0);\n"
+"	background-color: rgb(244, 254, 255);\n"
 "}\n"
 "\n"
 "\n"
@@ -296,7 +297,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5 = QHBoxLayout(self.content_left)
         self.horizontalLayout_5.setSpacing(0)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.horizontalLayout_5.setContentsMargins(0, 25, 10, 0)
+        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -341,7 +342,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3 = QVBoxLayout(self.option_btn)
         self.verticalLayout_3.setSpacing(10)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(15, 0, 0, 0)
+        self.verticalLayout_3.setContentsMargins(15, 20, 15, 0)
         self.btn_home = QPushButton(self.option_btn)
         self.btn_home.setObjectName(u"btn_home")
         sizePolicy4.setHeightForWidth(self.btn_home.sizePolicy().hasHeightForWidth())
@@ -486,8 +487,17 @@ class Ui_MainWindow(object):
         self.page_folder = QWidget()
         self.page_folder.setObjectName(u"page_folder")
         self.tableWidget = QTableWidget(self.page_folder)
+        if (self.tableWidget.columnCount() < 1):
+            self.tableWidget.setColumnCount(1)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        if (self.tableWidget.rowCount() < 1):
+            self.tableWidget.setRowCount(1)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem1)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setGeometry(QRect(80, 60, 411, 321))
+        self.tableWidget.verticalHeader().setVisible(True)
         self.stackedWidget_content.addWidget(self.page_folder)
 
         self.verticalLayout_4.addWidget(self.stackedWidget_content)
@@ -541,7 +551,7 @@ class Ui_MainWindow(object):
         self.pushButton.toggled.connect(self.lineEdit.setVisible)
         self.pushButton.toggled.connect(self.lineEdit.setHidden)
 
-        self.stackedWidget_content.setCurrentIndex(3)
+        self.stackedWidget_content.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -624,6 +634,10 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"home", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"like", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"trash", None))
+        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"\u65b0\u5efa\u5217", None));
+        ___qtablewidgetitem1 = self.tableWidget.verticalHeaderItem(0)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"\u65b0\u5efa\u884c", None));
         self.menu_file.setTitle(QCoreApplication.translate("MainWindow", u"\u6587\u4ef6", None))
         self.menu_edit.setTitle(QCoreApplication.translate("MainWindow", u"\u7f16\u8f91", None))
         self.menu_view.setTitle(QCoreApplication.translate("MainWindow", u"\u67e5\u770b", None))

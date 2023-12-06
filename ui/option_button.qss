@@ -1,21 +1,44 @@
-#option_btn QPushButton
+/*============================================*/
+/*menu_bbtn*/
+#frame_bmenu QPushButton
 {
-	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(32,226,215, 100), stop:1 rgba(249,254,165, 200));
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(227,253,245, 0), stop:1 rgba(255,230,250, 140));
 
-	text-align: left;
 	border: None;
 	margin-bottom: 15px;
 	border-top-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	padding-left: 5px;
 
 
 }
-#option_btn QPushButton:hover
+#frame_bmenu QPushButton:hover
 {
-		background-color: rgb(152,251,152);
+		background-color: rgba(227,253,245, 255);
 }
-#option_btn QPushButton:pressed
+#frame_bmenu QPushButton:pressed
+{
+		padding-left: 10px;
+		padding-top: 5px;
+}
+
+/*============================================*/
+/*menu_sbtn*/
+#frame_smenu QPushButton
+{
+	text-align: left;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(227,253,245, 50), stop:1 rgba(255,230,250, 120));
+	border: None;
+	margin-bottom: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+
+}
+#frame_smenu QPushButton:hover
+{
+		background-color: rgba(227,253,245, 255);
+}
+#frame_smenu QPushButton:pressed
 {
 		padding-left: 10px;
 		padding-top: 5px;

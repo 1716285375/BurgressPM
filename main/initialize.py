@@ -4,12 +4,11 @@ from PySide6.QtWidgets import *
 from PySide6.QtGui import *
 from PySide6.QtCore import *
 from end.database.mysql_db import *
-
+from end.main.mainWin import *
 
 from end.database.file_process import *
 
 
-EXIT_SUCCESS = 0
 
 
 # 登录窗口
@@ -21,6 +20,7 @@ class logWindow(QDialog):
         # self.openDB()
 
         # self.ui.pushButton_login.clicked.connect(self.check)
+
 
 
     @Slot()
@@ -52,6 +52,9 @@ class logWindow(QDialog):
         elif current_usr == usr and current_pwd == pwd:
             # self.sql.cursor.close()
             print('ok')
+            new_window.show()
+            self.close()
+
         else:
             print('usr or pwd error')
             usrtext.setText(u'')
@@ -136,10 +139,7 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     login = logWindow()
     login.show()
-    # if login.exec() == EXIT_SUCCESS:
-    #     login.conn.close()
-    #     print('database has been closed')
-    #     main_window = mainWindow()
-    #     main_window.show()
-    #     sys.exit(app.exec())
+    new_window = myWindow()
     sys.exit(app.exec())
+
+

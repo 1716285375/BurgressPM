@@ -1,0 +1,343 @@
+
+/*============================================*/
+/*centralwidget*/
+#centralwidget
+{
+	background-color: #F1F1FB;
+/*	border: 1px solid rgb(255,255,255);*/
+}
+/*============================================*/
+/*frame_menu*/
+#frame_bmenu, #frame_smenu
+{
+    border: 1px solid #FFEBCD;
+    background-color: rgba(234,76,60, 180);
+}
+/*============================================*/
+/*frame_head*/
+#frame_head
+{
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+    background-color: rgba(116,115,153, 100);
+
+}
+#frame_head #btn_head_menu
+{
+    border-radius: 10px;
+}
+
+#frame_head #btn_head_menu:pressed
+{
+		padding-left: 5px;
+		padding-top: 5px;
+}
+
+#frame_head #btn_head_search
+{
+    border-radius: 5px;
+    background-color: #FFEFD5;
+}
+#frame_head #btn_head_search:hover
+{
+        border-radius: 10px;
+	    margin: 2px 2px;
+}
+#frame_head #btn_head_search:pressed
+{
+		padding-left: 5px;
+		padding-top: 5px;
+}
+/*============================================*/
+/*menu_bbtn*/
+#frame_bmenu QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(168,202,186, 0), stop:1 rgba(93,65,87, 140));
+	border: 0;
+	margin-bottom: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+
+}
+#frame_bmenu QPushButton:hover
+{
+		background-color: rgba(227,253,245, 255);
+}
+#frame_bmenu QPushButton:pressed
+{
+		padding-left: 10px;
+		padding-top: 5px;
+}
+
+/*============================================*/
+/*menu_sbtn*/
+#frame_smenu QPushButton
+{
+	text-align: left;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(227,253,245, 50), stop:1 rgba(255,230,250, 120));
+	border: 0;
+	margin-bottom: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+
+}
+#frame_smenu QPushButton:hover
+{
+		background-color: rgba(227,253,245, 255);
+}
+#frame_smenu QPushButton:pressed
+{
+		padding-left: 10px;
+		padding-top: 5px;
+}
+/*============================================*/
+/*content_top_btn*/
+#frame_body  #btn_menu
+{
+	background-color: rgba(215,255,254, 100);
+	border: 0;
+	border-radius: 5px;
+}
+#frame_body  #btn_menu:hover
+{
+		background-color: rgba(215,255,254, 255);
+}
+
+/*============================================*/
+/*menu_slabel*/
+#frame_smenu #label_simg,#label_stitle
+{
+	background-color: rgba(0,0,0,0);
+	color:rgba(215,255,254, 255);
+	border-radius:2px;
+}
+
+
+/*============================================*/
+/*menu_blabel*/
+#frame_bmenu #label_bimg
+{
+	background-color: rgba(0,0,0,0);
+	color: rgba(215,255,254, 255);
+	border-radius:2px;
+}
+/*============================================*/
+/*page_user*/
+#frame_user_content{
+    background-color: #F8F8FF;
+}
+#frame_user_content QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(252,108,76,80), stop:1 rgba(236,140,105,220));
+	border-radius:5px;
+	border: 1px solid #FF6347;
+
+}
+#frame_user_content QPushButton:hover
+{
+		background-color: #CD5C5C;
+}
+#frame_user_content QPushButton:pressed
+{
+		padding-left: 5px;
+		padding-top: 5px;
+}
+/*============================================*/
+
+/*============================================*/
+/*frame_folder_head_btn*/
+#frame_folder_head QPushButton {
+	margin-bottom: 5px;
+	border-radius: 5px;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(132,250,176,50), stop:1 rgba(143,211,244,120));
+    border: 1px solid #2d8b4e; /* 边框颜色 */
+    color: #bdaead; /* 文本颜色 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+}
+#frame_folder_head QPushButton:hover {
+    background-color: #FF6666; /* 鼠标悬停时的背景色 */
+}
+#frame_folder_head QPushButton:pressed {
+    padding-left: 5px;
+	padding-top: 5px;
+    border: 1px solid #f25a47; /* 按下时的边框颜色 */
+}
+#frame_folder_head QPushButton:focus {
+    outline: none; /* 焦点时去除虚线框 */
+}
+#frame_folder_head QPushButton:disabled {
+    background-color: #cccccc; /* 禁用时的背景色 */
+    border: 1px solid #999999; /* 禁用时的边框颜色 */
+    color: #666666; /* 禁用时的文本颜色 */
+}
+#frame_folder_head QPushButton#specialButton {
+    background-color: #e74c3c; /* 特殊按钮的背景色 */
+    border: 1px solid #c0392b; /* 特殊按钮的边框颜色 */
+    color: #ffffff; /* 特殊按钮的文本颜色 */
+}
+/*============================================*/
+
+/*============================================*/
+/*BEGIN: page_folder*/
+/*frame_folder_right*/
+#frame_folder_right QPushButton {
+    background-color: 255,241,235; /* 渐变绿色背景 */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(255,241,235,100), stop:1 rgba(172,224,249,120));
+    border: 1px solid #87CEFA; /* 边框颜色 */
+    color: #ffffff; /* 文本颜色 */
+    border-radius: 8px; /* 圆角半径 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+}
+#frame_folder_right QPushButton:hover {
+    background-color: #9face6; /* 鼠标悬停时的背景色 */
+}
+#frame_folder_right QPushButton:pressed {
+    padding-left: 5px;
+	padding-top: 5px;
+    border: 1px solid #9370DB; /* 按下时的边框颜色 */
+}
+#frame_folder_right QPushButton:focus {
+    outline: none; /* 焦点时去除虚线框 */
+}
+#frame_folder_right QPushButton:disabled {
+    background-color: #cccccc; /* 禁用时的背景色 */
+    border: 1px solid #999999; /* 禁用时的边框颜色 */
+    color: #666666; /* 禁用时的文本颜色 */
+}
+#frame_folder_right QPushButton#specialButton {
+    background-color: #e74c3c; /* 特殊按钮的背景色 */
+    border: 1px solid #c0392b; /* 特殊按钮的边框颜色 */
+    color: #ffffff; /* 特殊按钮的文本颜色 */
+}
+
+/*btn_folder*/
+#frame_folder_left QPushButton {
+    background-color: 255,241,235; /* 渐变绿色背景 */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(255,241,235,100), stop:1 rgba(172,224,249,120));
+    border: 1px solid #87CEFA; /* 边框颜色 */
+    color: #ffffff; /* 文本颜色 */
+    border-radius: 5px; /* 圆角半径 */
+    font-weight: bold; /* 字体粗细 */
+}
+#frame_folder_left QPushButton:hover {
+    background-color: #9face6; /* 鼠标悬停时的背景色 */
+}
+#frame_folder_left QPushButton:pressed {
+    padding-left: 5px;
+	padding-top: 5px;
+    border: 1px solid #9370DB; /* 按下时的边框颜色 */
+}
+#frame_folder_left QPushButton:focus {
+    outline: none; /* 焦点时去除虚线框 */
+}
+#frame_folder_left QPushButton:disabled {
+    background-color: #cccccc; /* 禁用时的背景色 */
+    border: 1px solid #999999; /* 禁用时的边框颜色 */
+    color: #666666; /* 禁用时的文本颜色 */
+}
+
+/*tableWidget_folder*/
+#tableWidget_folder {
+    background-color: rgb(252, 252, 252); /* 淡白色背景 */
+    alternate-background-color: #d4d4d4; /* 交替行背景 */
+    selection-background-color: #954747; /* 选中行的橘色背景 */
+    gridline-color: #c3c3c3; /* 网格线颜色 */
+}
+#tableWidget_folder QHeaderView::section {
+    background-color: rgba(147,181,207, 220); /* 景蓝表头背景 */
+    color: #243264; /* 白色表头文字 */
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Oleo Script';
+    font: bold 12px;
+}
+#tableWidget_folder::item {
+    border-bottom: 1px solid #c3c3c3; /* 单元格底边框 */
+    color: #222222; /* 单元格文字颜色 */
+	text-align: center; /* 居中显示文本 */
+}
+
+#tableWidget_folder::item:selected {
+    background-color: #f7cdbc; /* 选中单元格的暗红色背景 */
+    color: #f9f1db; /* 选中单元格的白色文字 */
+}
+
+/*listWidget_folder*/
+#listWidget_folder{
+    background-color: #f7f7f7; /* 浅灰色背景 */
+}
+#listWidget_folder::item {
+    height: 30px; /* 设置列表项高度 */
+    font-family: '鸿雷拙书简体', 'sans-serif';
+    font-size: 14px; /* 设置字体大小 */
+    background-color: #ffffff; /* 白色列表项背景 */
+    border: 1px solid #d1d1d1; /* 列表项边框 */
+    color: #333333; /* 列表项文字颜色 */
+}
+
+#listWidget_folder::item:selected {
+    background-color: #a0c4ff; /* 选中列表项的淡蓝色背景 */
+    color: #ffffff; /* 选中列表项的白色文字 */
+    border: none;
+    outline: none;
+}
+#listWidget_folder::item:focus {
+    border: none;
+    outline: none;
+}
+/*END: page_folder*/
+/*============================================*/
+
+/*============================================*/
+/*BEGIN: page_like*/
+#treeWidget_like {
+    background-color: #FFF5EE;
+    color: 	#BC8F8F;
+    font: bold 12px;
+/*    border: 1px solid #808080;*/
+    alternate-background-color: #F08080;
+    text-align: center; /* 居中显示文本 */
+}
+#treeWidget_like::item{
+    height: 20px; /* 设置列表项高度 */
+    font-family: '鸿雷拙书简体', 'sans-serif';
+    font-size: 10px; /* 设置字体大小 */
+    border: 1px solid #c3c3c3; /* 单元格底边框 */
+    color: #222222; /* 单元格文字颜色 */
+	text-align: center; /* 居中显示文本 */
+}
+#treeWidget_like::item:hover {
+    background-color: #FF7F50;
+}
+#treeWidget_like::item:selected {
+/*    background-color: #FFC0CB;*/
+}
+/*END: page_like*/
+/*============================================*/
+/*============================================*/
+/*BEGIN: page_trash*/
+#treeWidget_trash {
+    background-color: #FFF5EE;
+    color: 	#BC8F8F;
+    font: bold 12px;
+/*    border: 1px solid #808080;*/
+    alternate-background-color: #F08080;
+    text-align: center; /* 居中显示文本 */
+}
+#treeWidget_trash::item{
+    height: 20px; /* 设置列表项高度 */
+    font-family: '鸿雷拙书简体', 'sans-serif';
+    font-size: 10px; /* 设置字体大小 */
+    border: 1px solid #c3c3c3; /* 单元格底边框 */
+    color: #222222; /* 单元格文字颜色 */
+	text-align: center; /* 居中显示文本 */
+}
+#treeWidget_trash::item:hover {
+    background-color: #FF7F50;
+}
+/*END: page_trash*/
+/*============================================*/

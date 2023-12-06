@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="icons">
+    <file>../feather/like.svg</file>
+    <file>../feather/unlike.svg</file>
+    <file>../img/bg.webp</file>
+    <file>../img/bg2.webp</file>
     <file>../feather/activity.svg</file>
     <file>../img/nocontent.svg</file>
     <file>../img/nodata.svg</file>

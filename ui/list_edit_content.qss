@@ -1,0 +1,41 @@
+/*============================================*/
+/*List_edit_mainwindow*/
+#List_edit
+{
+    background-color: #F8F8FF;
+	border: 1px solid #747399;
+}
+/*============================================*/
+/*gruopbox_btn*/
+#groupBox_list_edit_main QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(32,226,215,60), stop:1 rgba(249,254,165,60));
+	border-radius:10px;
+	border: 1px solid #FFFFF0;
+}
+#groupBox_list_edit_main QPushButton:hover
+{
+		background-color: rgba(215,255,254,100);
+}
+#groupBox_list_edit_main QPushButton:pressed
+{
+		padding-left: 5px;
+		padding-top: 5px;
+}
+/*============================================*/
+/*bottom_btn*/
+#frame_list_edit_bottom QPushButton
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(252,108,76,80), stop:1 rgba(236,140,105,220));
+	border-radius:10px;
+	border: 1px solid #FF6347;	
+}
+#frame_list_edit_bottom QPushButton:hover
+{
+		background-color: rgba(205,92,92,200);
+}
+#frame_list_edit_bottom QPushButton:pressed
+{
+		padding-left: 5px;
+		padding-top: 5px;
+}
